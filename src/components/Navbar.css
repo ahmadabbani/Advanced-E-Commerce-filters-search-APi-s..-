@@ -1,0 +1,248 @@
+.navbar .container{
+    position: relative;
+}
+
+.navbar{
+  position: fixed !important;
+  width: 100%;
+  z-index: 1000;
+  background-image: linear-gradient(to right, #000000,  #e63535);
+}
+
+.search-input {
+  padding: 10px 15px;
+  border: none;
+  background: #ffffff;
+  outline: none;
+  font-weight: bold;
+  border-radius: 50px;
+  width: 100%;
+  margin: 0 3rem !important;
+  font-size: 0.9rem !important;
+}
+
+.search-input::placeholder {
+  color: #999999;
+}
+
+.cart{
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    background-color:white;
+    color: black;
+    z-index: 2;
+    min-width: 350px;
+    max-width: 400px;
+    min-height: 250px;
+    max-height: 400px;
+    box-shadow: 2px 2px 5px rgb(41, 41, 41);
+    overflow-y: scroll;
+}
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    z-index: 3 !important;
+    color: white !important;
+  }
+  
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .nav-link{
+    color: white !important;
+    font-weight: bold !important;
+    margin-right: 1rem !important;
+    font-size: 1.3rem !important;
+  }
+  
+  .navbar-collapse.show {
+    transform: translateX(0) !important;
+  }
+
+.cart h2{
+    text-align: center;
+}
+span{
+    position: relative;
+}
+
+.cartNotification{
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    border-radius: 100%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 22px;
+    height: 22px;
+    top:-9px;
+    right: -12px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-top: 0.1rem !important;
+}
+
+@media (max-width: 992px){
+    .navbar-collapse {
+      position: fixed !important;
+      top: 0 !important;
+      right: 0 !important;
+      width: 100% !important;
+      min-height: 300px !important;
+      background: rgb(0, 0, 0) !important;
+      transform: translateX(100%) !important;
+      transition: transform 0.3s ease-out !important;
+      z-index: 3 !important;
+      height: 25%
+    }
+
+    .navbar-nav{
+      align-items: center;
+      padding-top: 2em;
+    }
+
+    .nav-item{
+      margin-bottom: 2rem;
+    }
+
+    .cart{
+      min-width: 100%;
+      max-width: 100%;
+    }
+
+    .navbar .nav-container{
+    max-width:100% !important;
+    justify-content: space-between !important;
+    }
+
+    .search-input {
+      width: 50% !important;
+      
+    }
+
+    .cart{
+      min-height: 200px;
+    }
+  }
+
+  @media (max-width: 768px){
+
+    .navbar-brand img{
+      width: 80px !important;
+    }
+
+    .search-input{
+      padding: 5px 10px;
+      width: 35% !important;
+    }
+    .search-input::placeholder {
+    font-size: 0.7rem;
+    }
+  }
+
+  @media (max-width: 576px){
+    .cart{
+      min-height: 150px;
+    }
+
+    .cart .sub-t{
+      font-size: 1rem;
+    }
+
+    .cart h3{
+      font-size:  1.3rem;
+    }
+
+    .cart .container h2{
+      font-size: 1rem;
+    }
+
+    .cart .container button{
+      font-size: 0.8rem !important;
+    }
+
+    .cardDetails .d-flex img{
+       max-width: 55px ;  
+       max-height: 55px ; 
+
+    }
+    .cardDetails .d-flex h6{
+      font-size: 0.8rem;
+    }
+    .cardDetails span{
+      font-size: 0.5rem;
+    }
+
+    .setQuantity .btn{
+      font-size: 1rem !important;
+      height: 25px !important;
+      width: 25px !important;
+      border-radius: 4px !important;
+    }
+
+    .setQuantity .small{
+      font-size: 0.6rem;
+    }
+
+    .setQuantity .d-flex span{
+      font-size: 0.7rem;
+    }
+
+    .btn-danger{
+      width: 30px !important;
+      height: 30px !important;
+      font-size: 0.7rem !important;
+    }
+
+    .cartNotification{
+      font-size: 0.7rem;
+      width: 16px;
+      height: 16px;
+      right: -10px;
+      top: -7px
+  }
+
+  .material-symbols-outlined{
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 1rem !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  }
+
+  @media (max-width: 475px){
+    .search-input{
+     position: absolute;
+     bottom: 0;
+      width: 35% !important;
+      font-size: 0.5rem !important;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: auto !important;
+    }
+
+    .search-input::placeholder {
+      font-size: 0.5rem;
+      }
+
+      .material-symbols-outlined{
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+      }
+
+      .cart{
+        top: 6rem;
+        right: 0;
+  }
+}

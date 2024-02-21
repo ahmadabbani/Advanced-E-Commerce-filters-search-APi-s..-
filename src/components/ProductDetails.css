@@ -1,0 +1,11 @@
+
+.bigsize{
+    padding-top: 10rem;
+}
+
+@media (max-width: 768px){
+    .bigsize{
+        width:90% !important;
+        margin-bottom: 2rem;
+    }
+}

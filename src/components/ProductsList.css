@@ -1,0 +1,52 @@
+.main-container{
+  padding-left: 1rem !important;
+  padding-right: 1.5rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width:100% !important;
+}
+
+.cat-btns button{
+ font-weight: bold;
+line-height: 1;
+padding: 10px 12px;
+border-radius: 10px;
+ font-size: 1rem;
+ border: 2px solid black;
+ font-family: cursive;
+ 
+}
+
+.cat-btns button:hover{
+    border: 2px solid black;
+}
+
+@media (max-width: 992px){
+.cat-btns button{
+
+  font-size: 0.7rem !important;
+}
+
+}
+
+@media (max-width: 768px){
+  .cat-btns button{ 
+
+    font-size: 0.6rem !important;
+}
+}
+
+@media (max-width: 620px){
+  .cat-btns{
+    flex-wrap: wrap;
+  }
+
+  .categTitle h1{
+font-size: 0.9rem;
+  }
+
+  .categTitle h1 span{
+    width: 50px !important;
+    left: -80px !important;
+  }
+}

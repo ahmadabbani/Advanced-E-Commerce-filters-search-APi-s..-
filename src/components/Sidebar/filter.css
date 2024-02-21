@@ -1,0 +1,36 @@
+.filter-btns button{
+   width: 60px;
+   font-size: 13px;
+   font-weight: bold;
+   border: 2px solid black;
+}
+
+.ml{
+   max-width: 100%;
+   width: 100%;
+}
+
+input{
+   margin-left: 25px !important;
+  
+ }
+
+@media (max-width: 992px){
+   .filter-btns button{
+    width: 40px;
+    font-size: 10px;
+   }
+}
+
+@media (max-width: 768px){
+   .filter-btns button{
+    width: 30px;
+    font-size: 8px;
+   }
+
+   input{
+     margin-right: 7px !important;
+     font-size: 8px !important;
+     margin-left: 0 !important;
+   }
+}
