@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import ProductsList from "./components/ProductsList";
 import About from "./components/About";
 import ProductDetails from "./components/ProductDetails";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ShoppingCartProvider from "./context/ShoppingCartContext";
 function App() {
   const [query, setQuery] = useState("");
@@ -35,40 +35,44 @@ function App() {
   };
 
   return (
-    <ShoppingCartProvider>
-      <Navbar query={query} handleInputChange={handleInputChange} />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Home />
-            </>
-          }
-        />
-        <Route
-          path="main"
-          element={
-            <>
-              <ProductsList
-                selectedRate={selectedRate}
-                setSelectedRate={setSelectedRate}
-                handleRateChange={handleRateChange}
-                handleChange={handleChange}
-                handleClick={handleClick}
-                query={query}
-                setQuery={setQuery}
-                selectedPrice={selectedPrice}
-                setSelectedPrice={setSelectedPrice}
-              />
-            </>
-          }
-        />
+    <BrowserRouter basename="/Advanced-E-Commerce-filters-search-APi-s..-">
+      {" "}
+      {/* Adjust the basename value */}
+      <ShoppingCartProvider>
+        <Navbar query={query} handleInputChange={handleInputChange} />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+              </>
+            }
+          />
+          <Route
+            path="main"
+            element={
+              <>
+                <ProductsList
+                  selectedRate={selectedRate}
+                  setSelectedRate={setSelectedRate}
+                  handleRateChange={handleRateChange}
+                  handleChange={handleChange}
+                  handleClick={handleClick}
+                  query={query}
+                  setQuery={setQuery}
+                  selectedPrice={selectedPrice}
+                  setSelectedPrice={setSelectedPrice}
+                />
+              </>
+            }
+          />
 
-        <Route path="about" element={<About />} />
-        <Route path="product/:productId" element={<ProductDetails />} />
-      </Routes>
-    </ShoppingCartProvider>
+          <Route path="about" element={<About />} />
+          <Route path="product/:productId" element={<ProductDetails />} />
+        </Routes>
+      </ShoppingCartProvider>
+    </BrowserRouter>
   );
 }
 
