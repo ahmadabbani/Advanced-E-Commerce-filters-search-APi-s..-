@@ -37,6 +37,7 @@ function App() {
   return (
     <ShoppingCartProvider>
       <Navbar query={query} handleInputChange={handleInputChange} />
+
       <Routes>
         <Route
           path="/"
