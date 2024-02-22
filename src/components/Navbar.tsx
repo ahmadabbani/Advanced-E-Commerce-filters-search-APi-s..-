@@ -38,7 +38,10 @@ function Navbar(props: NavbarProps) {
         style={{ backgroundColor: "black", color: "white" }}
       >
         <div className="container nav-container">
-          <Link className="navbar-brand" to="/">
+          <Link
+            className="navbar-brand"
+            to="/Advanced-E-Commerce-filters-search-APi-s..-/"
+          >
             <img
               src={logo}
               alt="logo"
@@ -61,7 +64,11 @@ function Navbar(props: NavbarProps) {
           >
             <ul className="navbar-nav mb-2 ms-auto mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/Advanced-E-Commerce-filters-search-APi-s..-/"
+                >
                   Home
                 </Link>
               </li>
