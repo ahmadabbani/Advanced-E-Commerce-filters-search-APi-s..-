@@ -40,7 +40,7 @@ function App() {
 
       <Routes>
         <Route
-          path="/"
+          path="/Advanced-E-Commerce-filters-search-APi-s..-/"
           element={
             <>
               <Home />
