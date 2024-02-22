@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import ProductsList from "./components/ProductsList";
 import About from "./components/About";
 import ProductDetails from "./components/ProductDetails";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import ShoppingCartProvider from "./context/ShoppingCartContext";
 function App() {
   const [query, setQuery] = useState("");
@@ -35,9 +35,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter basename="/Advanced-E-Commerce-filters-search-APi-s..-">
-      {" "}
-      {/* Adjust the basename value */}
+    <HashRouter basename="/Advanced-E-Commerce-filters-search-APi-s..-/">
       <ShoppingCartProvider>
         <Navbar query={query} handleInputChange={handleInputChange} />
         <Routes>
@@ -72,7 +70,7 @@ function App() {
           <Route path="product/:productId" element={<ProductDetails />} />
         </Routes>
       </ShoppingCartProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
