@@ -35,7 +35,7 @@ function App() {
   };
 
   return (
-    <HashRouter basename="/Advanced-E-Commerce-filters-search-APi-s..-/">
+    <HashRouter basename="/Advanced-E-Commerce-filters-search-APi-s..-">
       <ShoppingCartProvider>
         <Navbar query={query} handleInputChange={handleInputChange} />
         <Routes>
