@@ -221,10 +221,15 @@ span{
   }
 
   @media (max-width: 475px){
+
+    .navbar-brand img{
+     display: none;
+    }
+
     .search-input{
-     position: absolute;
-     bottom: 0;
-      width: 35% !important;
+      position: absolute;
+      bottom: 0;
+      width: 40% !important;
       font-size: 0.5rem !important;
       left: 50%;
       transform: translateX(-50%);
@@ -237,12 +242,15 @@ span{
 
       .material-symbols-outlined{
         position: absolute;
-        bottom: 0;
-        right: 20px;
+        bottom: 3px;
+        right: 55px;
+        width: 25px !important;
+        height: 25px !important;
+        font-size: 0.8rem !important;
       }
 
       .cart{
-        top: 6rem;
+        top: 2.5rem;
         right: 0;
   }
 }

@@ -2,7 +2,7 @@ import aboutimg from "../images/about.png";
 import "./about.css";
 function About() {
   return (
-    <div className="container" style={{ paddingTop: "9rem" }}>
+    <div className="container" style={{ paddingTop: "8rem" }}>
       <div className="row">
         <h1
           className="mb-5"

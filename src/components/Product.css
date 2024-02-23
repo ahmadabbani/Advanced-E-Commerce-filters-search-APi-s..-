@@ -77,38 +77,34 @@
 
   @media (max-width: 768px){
     .grid{
-        grid-template-columns: repeat(2, 0.5fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     .smallsize{
-        font-size: 0.4rem;  
+        font-size: 0.5rem;  
     }
 
     .body-content img{
-        max-width: 40px !important;
-        max-height: 40px !important;
+        max-width: 45px !important;
+        max-height: 45px !important;
        
     }
 
     .card-text{
-        font-size: 0.4rem !important;
+        font-size: 0.5rem !important;
        
     }
 
     .rate, .price{
-        font-size: 0.4rem !important;
+        font-size: 0.5rem !important;
         
     }
 
     .buttons button{
-        font-size: 0.4rem !important;
+        font-size: 0.5rem !important;
         padding: 1px 1px !important;
         width: 40px;
     }
    
   }
 
-  @media (max-width: 340px){
-    .grid{
-        grid-template-columns: repeat(1, 1fr);
-    }
-  }
+

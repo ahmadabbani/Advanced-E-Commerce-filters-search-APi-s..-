@@ -45,7 +45,7 @@ function Navbar(props: NavbarProps) {
             <img
               src={logo}
               alt="logo"
-              style={{ width: "90px" }}
+              style={{ width: "80px" }}
               className="rounded rounded-circle"
             />
           </Link>

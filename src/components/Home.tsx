@@ -6,12 +6,11 @@ import tech from "../images/tech.jpg";
 
 function Home() {
   return (
-    <div className="container pt-5" style={{ minHeight: "70vh" }}>
+    <div className="container pt-4 home" style={{ minHeight: "70vh" }}>
       <div className="row">
         <div
           className="col-12 mb-5 "
           style={{
-            borderRight: "8px solid red",
             paddingTop: "8rem",
           }}
         >
@@ -45,12 +44,7 @@ function Home() {
             </Link>
           </div>
         </div>
-        <div
-          className="col-12 d-flex justify-content-center gap-3"
-          style={{
-            borderLeft: "8px solid black",
-          }}
-        >
+        <div className="col-12 d-flex justify-content-center gap-3">
           <img
             src={j2}
             className="w-25"
